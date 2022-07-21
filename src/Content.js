@@ -4,15 +4,18 @@ const Content = () => {
   const handleNameChange = () => {
     const names = ["Bob", "Kevin", "Dave", "Laura", "Laura"];
     const int = Math.floor(Math.random() * 5);
+    
     return names[int];
   };
 
   const handleClick = () => {
     console.log("You clicked it");
   };
+
   const handleClick2 = (name) => {
     console.log(`${name} was clicked`);
   };
+
   const handleClick3 = (e) => {
     console.log(e.target.innerText);
   };
